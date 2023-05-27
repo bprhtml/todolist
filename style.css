@@ -1,0 +1,66 @@
+/* #dec5ec , #cdedfd , #b6dcfe , #a9f8fb , #81f7e5  */
+
+ @font-face {
+    font-family: "Light Spartan";
+    src: url("./images_fonts/LeagueSpartan-Bold.otf");
+ }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: "Light Spartan", sans-serif;
+}
+
+.header {
+    padding-inline: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(165deg, #dec5ec, #b6dcfe, #81f7e5);
+}
+
+.header,
+.header>div>button {
+    font-weight: lighter;
+    font-size: 4vh;
+}
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(165deg, #dec5ec, #b6dcfe, #81f7e5);
+    border: 3px solid black;
+    border-radius: 1vw;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.menu-content>a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content>a:hover {
+    background-color: #aaa;
+}
+
+.menu:hover .menu-content {
+    display: block;
+}
