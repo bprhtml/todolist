@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="../src/index.js" defer></script>
+    <script src="../dist/bundle.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images_fonts/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images_fonts/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images_fonts/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <div class="header">
         <div class="menu">
             <button class="menu-button">Menu</button>
             <div class="menu-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <button>Overview</button>
+                <button>Projects</button>
+                <button>About</button>
               </div>
         </div>
         <div class="title-card">To-Do List</div>
+    </div>
+    <div class="container">
+        <div class="form-holder"></div>
+        <div class="content"></div>
     </div>
 </body>
 </html>
