@@ -71,6 +71,15 @@
     display: block;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(165deg, #dec5ec , #cdedfd , #b6dcfe , #a9f8fb , #81f7e5);
+    width: 100vw;
+    height: 90vh;
+
+}
+
 .add-task-btn {
     width: 16vw;
     height: 5vh;
@@ -98,8 +107,23 @@
 
 }
 
+@keyframes formOpen {
+    from {
+        transform: translateY(100%);
+    } to {
+        transform: translateY(0);
+    }
+}
+
+.form-open {
+    animation-name: formOpen;
+    animation-duration: 2s;
+}
+
 .form-holder {visibility: hidden;}
 .form {
+    border: 0.3vw solid black;
+    border-radius: 3vw;
     background-color: #eee;
     z-index: 1;
     display: flex;
@@ -107,18 +131,49 @@
     align-items: center;
     justify-content: center;
     width: 50vw;
-    height: 50vh;
     position: absolute;
     left: 25vw;
     top: 20vh;
 }
 
 .form-input,
-.form-buttons,
 .form-checkbox {
+    resize: none;
     display: flex;
     justify-content: center;
     margin: 1vw;
     margin-inline: 2vw;
     width: 80%;
+    border-radius: 1vw;
+    border: 0.3vw solid black;
+    padding: 1vw;
+}
+.form-input {
+    font-size: 2vh;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1vw;
+    margin-inline: 2vw;
+    width: 80%;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+
+.table-cell {
+    border-top: 2px solid black;
+}
+
+.delete-button {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.delete-button:hover {
+    color: red;
+    text-shadow: 1px black;
 }
